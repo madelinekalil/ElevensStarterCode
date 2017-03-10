@@ -59,9 +59,12 @@ public class Shuffler {
                    k = k+2;
                }
                k = 1;
-               for (int j = valueslength/2; j<=values.length; j++) {
+               for (int j = valueslength/2; j<values.length; j++) {
                    shuffled[k] = values[j];
                    k = k+2;
+               }
+               for (int i = 0; i < shuffled.length; i++) {
+                   values[i] = shuffled[i];
                }
 	}
 
